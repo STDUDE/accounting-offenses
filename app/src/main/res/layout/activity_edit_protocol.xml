@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context=".EditProtocolActivity">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/title_menu_layout"/>
+
+        <ImageButton android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_next"
+            android:id="@+id/next_button"/>
+
+    </RelativeLayout>
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none">
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TabWidget>
+            </HorizontalScrollView>
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/dataOffenderPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ScrollView android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <include layout="@layout/offender_edit_layout"/>
+                    </ScrollView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/descriptionPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ScrollView android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <include layout="@layout/offense_details_edit_layout"/>
+                    </ScrollView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/witnessesPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ScrollView android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <include layout="@layout/witness_edit_layout"/>
+                    </ScrollView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/victimsPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ScrollView android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <include layout="@layout/victim_edit_layout"/>
+                    </ScrollView>
+                </RelativeLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

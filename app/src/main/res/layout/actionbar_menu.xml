@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/menuBackgroundColor">
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_menu"
+        android:layout_marginTop="@dimen/menu_margin_items_top"
+        android:textSize="@dimen/title_text_size"
+        android:textStyle="italic|bold"
+        android:textColor="@color/menuTitleColor"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/title_menu"/>
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/menu_margin_items_top"
+                android:id="@+id/add_new_offense_item"
+                style="@style/MenuItemStyle">
+                <ImageView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_offense"
+                    android:id="@+id/add_new_offense_icon"/>
+                <TextView style="@style/MenuItemTextStyle"
+                    android:layout_toRightOf="@id/add_new_offense_icon"
+                    android:layout_centerInParent="true"
+                    android:text="@string/create_offense_item"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_below="@id/add_new_offense_item"
+                android:id="@+id/history_offenses_item"
+                style="@style/MenuItemStyle">
+                <ImageView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_history_offense"
+                    android:id="@+id/history_offenses_icon"/>
+                <TextView style="@style/MenuItemTextStyle"
+                    android:layout_toRightOf="@id/history_offenses_icon"
+                    android:layout_centerInParent="true"
+                    android:text="@string/history_item"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_below="@id/history_offenses_item"
+                android:id="@+id/private_office_item"
+                style="@style/MenuItemStyle">
+                <ImageView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_private_office"
+                    android:id="@+id/private_office_icon"/>
+                <TextView style="@style/MenuItemTextStyle"
+                    android:layout_toRightOf="@id/private_office_icon"
+                    android:layout_centerInParent="true"
+                    android:text="@string/private_office_item"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_below="@id/private_office_item"
+                android:id="@+id/search_item"
+                style="@style/MenuItemStyle">
+                <ImageView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search"
+                    android:id="@+id/search_icon"/>
+                <TextView style="@style/MenuItemTextStyle"
+                    android:layout_toRightOf="@id/search_icon"
+                    android:layout_centerInParent="true"
+                    android:text="@string/search_item"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_below="@id/search_item"
+                android:id="@+id/articles_item"
+                style="@style/MenuItemStyle">
+                <ImageView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_articles"
+                    android:id="@+id/articles_icon"/>
+                <TextView style="@style/MenuItemTextStyle"
+                    android:layout_toRightOf="@id/articles_icon"
+                    android:layout_centerInParent="true"
+                    android:text="@string/articles_item"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

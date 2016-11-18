@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ff911c</color>
+    <color name="colorPrimaryDark">#965000</color>
+    <color name="colorAccent">@android:color/darker_gray</color>
+
+    <color name="backgroundColor">#eff0ff</color>
+    <color name="titleTextColor">#c8000000</color>
+    <color name="backgroundTextEdit">#efeffd</color>
+
+    <color name="baseButtonNormalColor">#f6ffb43d</color>
+    <color name="baseButtonPressedColor">#E6D15D00</color>
+    <color name="textButtonColor">#f0000000</color>
+
+    <color name="menuButtonBackground">#b54d5357</color>
+    <color name="menuBackgroundColor">#E8DEDABC</color>
+    <color name="menuItemNormal">#E8DEDABC</color>
+    <color name="menuItemPressed">#e8fff7b7</color>
+    <color name="menuTitleColor">#e8603716</color>
+
+    <color name="listItemBackgroundNormalColor">#E8DEDABC</color>
+    <color name="listItemBackgroundPressedColor">#eff0ff</color>
+
+</resources>

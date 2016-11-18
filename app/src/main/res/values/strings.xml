@@ -1,0 +1,89 @@
+<resources>
+
+    <!-- titles strings -->
+    <string name="app_name">Учёт правонарушений</string>
+    <string name="authorization_title">Авторизация</string>
+    <string name="search_violator_title">Поиск человека по базе МВД</string>
+    <string name="search_article_title">Поиск статьи в КоАП и ПИКоАП</string>
+    <string name="title_menu">Меню:</string>
+    <string name="history_title">История протоколов</string>
+
+    <!-- widgets strings -->
+    <string name="authorization_button">Вход</string>
+    <string name="search_violation_second_name">Фамилия</string>
+
+    <string name="title_activity_search_violator">SearchViolatorActivity</string>
+
+    <string name="create_offense_item">Создать протокол</string>
+    <string name="history_item">История протоколов</string>
+    <string name="private_office_item">Личный кабинет</string>
+    <string name="statistic_item">Статистика</string>
+    <string name="search_item">Поиск</string>
+    <string name="articles_item">Статьи</string>
+
+    <string name="protocol_number_format" formatted="false">ПРОТОКОЛ №</string>
+
+    <string name="title_date_dialog">Выберите дату</string>
+    <string name="cancel_button_date_dialog">Отмена</string>
+    <string name="set_button_date_dialog">Выбрать</string>
+
+    <string name="history_all_time">История за всё время</string>
+    <string name="history_all_articles">По всем статьям</string>
+    <string name="first_witness_check">Нет свидетеля №1</string>
+    <string name="second_witness_check">Нет свидетеля №2</string>
+    <string name="victim_check">Потерпевших нет</string>
+
+    <!-- hint strings -->
+    <string name="private_number_edit_hint">Личный номер&#8230;</string>
+    <string name="password_edit_hint">Пароль&#8230;</string>
+    <string name="s_name_edit_hint">Фамилия&#8230;</string>
+    <string name="f_name_edit_hint">Имя&#8230;</string>
+    <string name="m_name_edit_hint">Отчество&#8230;</string>
+    <string name="brithday_edit_hint">день.месяц.год рождения&#8230;</string>
+    <string name="address_edit_hint">Адресс проживания&#8230;</string>
+    <string name="citizenship_edit_hint">Гражданство&#8230;</string>
+    <string name="passport_edit_hint">Паспортные данные&#8230;</string>
+    <string name="work_edit_hint">Место работы(учёбы)&#8230;</string>
+    <string name="position_work_edit_hint">Должность&#8230;</string>
+    <string name="phone_edit_hint">Телефон&#8230;</string>
+    <string name="date_offence_edit_hint">Дата нарушения&#8230;</string>
+    <string name="time_offence_edit_hint">Время нарушения&#8230;</string>
+    <string name="article_edit_hint">Статья(№ кодекс)&#8230;</string>
+    <string name="description_offence_edit_hint">Подробное описание нарушения&#8230;</string>
+    <string name="place_offence_edit_hint">Адресс(место) нарушения&#8230;</string>
+
+    <!-- progress dialog -->
+    <string name="please_wait">Пожалуйста подождите</string>
+    <string name="authorization_progress">Авторизация&#8230;</string>
+    <string name="logout_progress">Выход из аккаунта&#8230;</string>
+    <string name="preparing_protocol_progress">Проверка протокола&#8230;</string>
+
+    <!-- toasts -->
+    <string name="login_toast">Пожалуйста введите личный номер</string>
+    <string name="password_toast">Пожалуйста введите пароль</string>
+    <string name="s_name_offender_toast">Пожалуйста введите фамилию подозреваемого</string>
+    <string name="f_name_offender_toast">Пожалуйста введите имя подозреваемого</string>
+    <string name="m_name_offender_toast">Пожалуйста введите отчество подозреваемого</string>
+    <string name="brithday_offender_toast">Пожалуйста введите дату рождения подозреваемого</string>
+    <string name="address_offender_toast">Пожалуйста введите место жительства(пребывания) подозреваемого</string>
+    <string name="citizenship_offender_toast">Пожалуйста введите гражданство подозреваемого</string>
+    <string name="passport_offender_toast">Пожалуйста введите паспортные данные подозреваемого</string>
+    <string name="work_offender_toast">Пожалуйста введите место работы(обучения) подозреваемого</string>
+    <string name="position_offender_toast">Пожалуйста введите должность подозреваемого</string>
+    <string name="article_offence_toast">Пожалуйста введите статью кодекса об АП, которая была нарушена</string>
+    <string name="address_offence_toast">Пожалуйста введите место совершения АП</string>
+    <string name="description_offence_toast">Пожалуйста введите описание правонарушения</string>
+    <string name="datas_witness_toast">Пожалуйста введите данные о свидетелях</string>
+    <string name="datas_victim_toast">Пожалуйста введите данные о потерпешвем(ей)</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- dialogs -->
+    <string name="logout_title_dialog">Выход из аккаунта</string>
+    <string name="logout_message_dialog">Вы действительно хотите выйти из аккаунта?</string>
+    <string name="confirm_title_dialog">Предупреждение</string>
+    <string name="close_edit_protocol_message_dialog">Если вы перейдёте на другую вкладку, то
+        заполненные данные будут стёрты. Вы всё равно хотите продолжить?</string>
+
+</resources>

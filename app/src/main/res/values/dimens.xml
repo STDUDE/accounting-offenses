@@ -1,0 +1,33 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- margins and paddings -->
+    <dimen name="activity_horizontal_margin">15dp</dimen>
+    <dimen name="activity_vertical_margin">15dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="menu_margin_items_top">5dp</dimen>
+    <dimen name="menu_horizontal_item_padding">10dp</dimen>
+    <dimen name="menu_item_padding">5dp</dimen>
+    <dimen name="history_widget_margin_top">10dp</dimen>
+    <dimen name="protocol_edits_margin_top">10dp</dimen>
+    <dimen name="protocol_blank_margin">9dp</dimen>
+
+    <dimen name="authorization_edittext_horizontal_margin">20dp</dimen>
+    <dimen name="authorization_edittext_vertical_margin">10dp</dimen>
+
+    <!-- text size -->
+    <dimen name="title_menu_size">17sp</dimen>
+    <dimen name="title_authorization_size">32sp</dimen>
+    <dimen name="title_text_size">30sp</dimen>
+    <dimen name="button_text_size_large">30sp</dimen>
+    <dimen name="button_text_size_medium">20sp</dimen>
+    <dimen name="button_text_size_small">10sp</dimen>
+    <dimen name="checkbox_text_size_medium">19sp</dimen>
+    <dimen name="private_office_size_text">21sp</dimen>
+
+    <!-- height and width -->
+    <dimen name="title_menu_height">60dp</dimen>
+    <dimen name="menu_shadow_width">15dp</dimen>
+    <dimen name="sliding_menu_offset">60dp</dimen>
+
+</resources>

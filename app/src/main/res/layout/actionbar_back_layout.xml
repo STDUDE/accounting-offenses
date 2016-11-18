@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_menu_height"
+    android:background="@color/colorPrimary">
+
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/back_button"
+        android:background="@drawable/ic_arrow_back"
+        android:layout_marginLeft="6dp"
+        android:clickable="true"
+        />
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/back_button"
+        android:textSize="@dimen/title_menu_size"
+        android:textStyle="bold"
+        android:layout_marginLeft="6dp"
+        android:textColor="@android:color/white"
+        android:text="Учёт правонарушений"
+        android:layout_centerVertical="true"
+        android:id="@+id/title_back_actionbar_text_view"/>
+
+</RelativeLayout>

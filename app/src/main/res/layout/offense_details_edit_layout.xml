@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp">
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:id="@+id/article_offence_edit"
+        android:layout_marginTop="@dimen/protocol_edits_margin_top"
+        android:hint="@string/article_edit_hint"
+        style="@style/BaseEditText"/>
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:id="@+id/place_offence_edit"
+        android:layout_marginTop="@dimen/protocol_edits_margin_top"
+        android:hint="@string/place_offence_edit_hint"
+        android:layout_below="@id/article_offence_edit"
+        style="@style/BaseEditText"/>
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:id="@+id/description_offence_edit"
+        android:layout_marginTop="@dimen/protocol_edits_margin_top"
+        android:hint="@string/description_offence_edit_hint"
+        android:gravity="start"
+        android:lines="8"
+        android:layout_below="@id/place_offence_edit"
+        style="@style/BaseEditText"/>
+
+</RelativeLayout>

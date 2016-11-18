@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.fr2eman.accountingoffenses.ProtocolsFilterActivity"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include android:id="@+id/title_actionbar"
+            layout="@layout/actionbar_back_layout"/>
+
+        <ImageButton android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_next"
+            android:id="@+id/search_button"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/history_title"
+            android:id="@+id/titleTextView"
+            android:gravity="center"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold|italic"/>
+
+        <CheckBox android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTextView"
+            android:id="@+id/checkAllTimes"
+            android:text="@string/history_all_time"
+            android:layout_marginTop="@dimen/history_widget_margin_top"
+            android:textSize="@dimen/checkbox_text_size_medium"/>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkAllTimes"
+            android:layout_margin="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tableDates">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="С  "
+                    android:id="@+id/beginTextView"
+                    android:gravity="center"
+                    android:textSize="@dimen/button_text_size_medium"
+                    android:paddingRight="3dp"
+                    android:textStyle="italic"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:ems="10"
+                    android:hint="день.месяц.год"
+                    android:editable="false"
+                    style="@style/BaseEditText"
+                    android:id="@+id/beginDateEdit" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="По "
+                    android:id="@+id/endTextView"
+                    android:gravity="center"
+                    android:textSize="@dimen/button_text_size_medium"
+                    android:paddingRight="3dp"
+                    android:textStyle="italic"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:ems="10"
+                    android:editable="false"
+                    android:hint="день.месяц.год"
+                    style="@style/BaseEditText"
+                    android:id="@+id/endDateEdit"/>
+            </TableRow>
+        </TableLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.fr2eman.accountingoffenses">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".AuthorizationActivity_"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchViolatorActivity_"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PersonalActivity_"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".HistoryActivity_"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".EditProtocolActivity_"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="stateHidden" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".BlankProtocolActivity_" />
+        <activity android:name=".ProtocolsFilterActivity_" />
+        <activity android:name=".ListProtocolsActivity_" />
+        <activity android:name=".OffenderListActivity_" />
+        <activity android:name=".OffenderDetailsActivity_" />
+        <activity
+            android:name=".SearchArticleActivity_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ArticlesListActivity_" />
+        <activity android:name=".ArticleDetailsActivity_"></activity>
+    </application>
+
+</manifest>

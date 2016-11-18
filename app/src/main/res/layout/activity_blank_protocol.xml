@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.fr2eman.accountingoffenses.BlankProtocolActivity">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/actionbar_back_layout"></include>
+
+        <ImageButton android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_save_white"
+            android:id="@+id/save_button"/>
+
+    </RelativeLayout>
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/protocol_blank_margin"
+            android:paddingBottom="@dimen/protocol_blank_margin"
+            android:paddingLeft="@dimen/protocol_blank_margin"
+            android:paddingRight="@dimen/protocol_blank_margin">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/protocol_blank_number_text"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:id="@+id/protocol_blank_text1"
+                android:layout_below="@id/protocol_blank_number_text"
+                android:layout_marginLeft="14dp"
+                android:text="об административном правонарушении"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_date_place"
+                android:layout_below="@id/protocol_blank_text1"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_employee"
+                android:layout_below="@id/protocol_date_place"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_fio_offender"
+                android:layout_below="@id/protocol_employee"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_brithday_offender"
+                android:layout_below="@id/protocol_fio_offender"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_address_offender"
+                android:layout_below="@id/protocol_brithday_offender"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_phone_offender"
+                android:layout_below="@id/protocol_address_offender"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_work_offender"
+                android:layout_below="@id/protocol_phone_offender"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_position_offender"
+                android:layout_below="@id/protocol_work_offender"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_citizenship_offender"
+                android:layout_below="@id/protocol_position_offender"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_description"
+                android:layout_below="@id/protocol_citizenship_offender"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_article"
+                android:layout_below="@id/protocol_description"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_victim"
+                android:layout_below="@id/protocol_article"
+                android:text="Потерпевший(ая):"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_s_name_victim"
+                android:layout_below="@id/protocol_victim"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_f_name_victim"
+                android:layout_below="@id/protocol_s_name_victim"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_m_name_victim"
+                android:layout_below="@id/protocol_f_name_victim"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_address_victim"
+                android:layout_below="@id/protocol_m_name_victim"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_phone_victim"
+                android:layout_below="@id/protocol_address_victim"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_witnesses"
+                android:layout_below="@id/protocol_phone_victim"
+                android:text="Свидетели:"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_s_name_first_witness"
+                android:layout_below="@id/protocol_witnesses"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_f_name_first_witness"
+                android:layout_below="@id/protocol_s_name_first_witness"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_m_name_first_witness"
+                android:layout_below="@id/protocol_f_name_first_witness"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_address_first_witness"
+                android:layout_below="@id/protocol_m_name_first_witness"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_phone_first_witness"
+                android:layout_below="@id/protocol_address_first_witness"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_s_name_second_witness"
+                android:layout_below="@id/protocol_phone_first_witness"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_f_name_second_witness"
+                android:layout_below="@id/protocol_s_name_second_witness"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_m_name_second_witness"
+                android:layout_below="@id/protocol_f_name_second_witness"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_address_second_witness"
+                android:layout_below="@id/protocol_m_name_second_witness"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/protocol_phone_second_witness"
+                android:layout_below="@id/protocol_address_second_witness"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

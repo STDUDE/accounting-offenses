@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:clickable="true">
+
+    <CheckBox android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/checkbox_text_size_medium"
+        android:id="@+id/checkVictim"
+        android:layout_marginTop="@dimen/protocol_edits_margin_top"
+        android:layout_centerHorizontal="true"
+        android:text="@string/victim_check"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/checkVictim"
+        android:id="@+id/victimPanel">
+
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/s_name_victim_edit"
+            android:layout_marginTop="@dimen/protocol_edits_margin_top"
+            android:hint="@string/s_name_edit_hint"
+            android:layout_below="@id/checkVictim"
+            style="@style/BaseEditText"/>
+
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/f_name_victim_edit"
+            android:layout_marginTop="@dimen/protocol_edits_margin_top"
+            android:hint="@string/f_name_edit_hint"
+            android:layout_below="@id/s_name_victim_edit"
+            style="@style/BaseEditText"/>
+
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/m_name_victim_edit"
+            android:layout_marginTop="@dimen/protocol_edits_margin_top"
+            android:hint="@string/m_name_edit_hint"
+            android:layout_below="@id/f_name_victim_edit"
+            style="@style/BaseEditText"/>
+
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:id="@+id/address_victim_edit"
+            android:layout_marginTop="@dimen/protocol_edits_margin_top"
+            android:hint="@string/address_edit_hint"
+            android:layout_below="@id/m_name_victim_edit"
+            style="@style/BaseEditText"/>
+
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:id="@+id/phone_victim_edit"
+            android:layout_marginTop="@dimen/protocol_edits_margin_top"
+            android:hint="@string/phone_edit_hint"
+            android:layout_below="@id/address_victim_edit"
+            style="@style/BaseEditText"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:clickable="true">
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/s_name_offender_edit"
+        android:layout_marginTop="@dimen/protocol_edits_margin_top"
+        android:hint="@string/s_name_edit_hint"
+        style="@style/BaseEditText"/>
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/f_name_offender_edit"
+        android:layout_marginTop="@dimen/protocol_edits_margin_top"
+        android:hint="@string/f_name_edit_hint"
+        android:layout_below="@id/s_name_offender_edit"
+        style="@style/BaseEditText"/>
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/m_name_offender_edit"
+        android:layout_marginTop="@dimen/protocol_edits_margin_top"
+        android:hint="@string/m_name_edit_hint"
+        android:layout_below="@id/f_name_offender_edit"
+        style="@style/BaseEditText"/>
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:id="@+id/brith_day_offender_edit"
+        android:layout_marginTop="@dimen/protocol_edits_margin_top"
+        android:hint="@string/brithday_edit_hint"
+        android:editable="false"
+        android:layout_below="@id/m_name_offender_edit"
+        style="@style/BaseEditText"/>
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:id="@+id/address_offender_edit"
+        android:layout_marginTop="@dimen/protocol_edits_margin_top"
+        android:hint="@string/address_edit_hint"
+        android:layout_below="@id/brith_day_offender_edit"
+        style="@style/BaseEditText"/>
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/citizenship_offender_edit"
+        android:layout_marginTop="@dimen/protocol_edits_margin_top"
+        android:hint="@string/citizenship_edit_hint"
+        android:layout_below="@id/address_offender_edit"
+        style="@style/BaseEditText"/>
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/work_offender_edit"
+        android:layout_marginTop="@dimen/protocol_edits_margin_top"
+        android:hint="@string/work_edit_hint"
+        android:layout_below="@id/citizenship_offender_edit"
+        style="@style/BaseEditText"/>
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/position_offender_edit"
+        android:layout_marginTop="@dimen/protocol_edits_margin_top"
+        android:hint="@string/position_work_edit_hint"
+        android:layout_below="@id/work_offender_edit"
+        style="@style/BaseEditText"/>
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:id="@+id/phone_offender_edit"
+        android:layout_marginTop="@dimen/protocol_edits_margin_top"
+        android:hint="@string/phone_edit_hint"
+        android:layout_below="@id/position_offender_edit"
+        style="@style/BaseEditText"/>
+
+</RelativeLayout>
